@@ -5,6 +5,15 @@ Team 2: Đỗ Gia Bảo + Nguyễn Minh Trí + Trần Việt Hùng
 
 namespace FarmManage 
 {
+    public interface IDataImporter
+    {
+        void ImportData(string filePath);
+    }
+    public interface IDataExporter
+    {
+        void ExportDataAsTable();
+        void ExportDataToFile(string filePath);
+    }
     class Inform
     {
         //Các field
